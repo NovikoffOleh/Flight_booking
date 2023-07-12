@@ -8,33 +8,103 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="headre">
+    <header class="header">
       <div class="content">
-        <div class="header-row">
+        <div class="header-top">
+          <div class="header-row">
+            <div class="header-left">
+              <a href="tel:380504442211" class="header-phone"
+                >+38050 444 22 11</a
+              >
+              <a href="mailto:novikoff_oleh@ukr.net" class="header-email"
+                >novikoff_oleh@ukr.net</a
+              >
+            </div>
+
+            <div class="header-right">
+              <div class="header-social">
+                <a href="https://www.facebook.com/oleg.novikoff">
+                  <img src="images/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="https://www.facebook.com/oleg.novikoff">
+                  <img src="images/linkedin.svg" alt="Linkedin" />
+                </a>
+                <a href="https://www.facebook.com/oleg.novikoff">
+                  <img src="images/twitter.svg" alt="Twitter" />
+                </a>
+              </div>
+
+              <div class="header-btn-wrap">
+                <a href="#" class="header-btn">Log In</a>
+                <a href="#" class="header-btn is-active">Sign Up</a>
+              </div>
+
+              <div class="header-nr select-custom">
+                <select>
+                  <option>NRs 1</option>
+                  <option>NRs 2</option>
+                  <option>NRs 3</option>
+                  <option>NRs 4</option>
+                  <option>NRs 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-bottom">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.svg" alt="Let’sBookIt" />
+            </a>
+          </div>
+
+          <nav class="header-nav">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Bookings</a></li>
+              <li><a href="#">Find Ticket</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="hamburger">
+            <img src="images/hamburger.svg" alt="Hamburger" />
+          </div>
+        </div>
+
+        <div class="header-mobile">
+          <div class="header-mobile-close">
+            <img src="images/close.svg" alt="Close" />
+          </div>
+
           <div class="header-left">
-            <a href="tel:380444441122" class="hader-phone">+38 044 444 11 22</a>
-            <a href="mailto:novikoff_oleh@ukr.net" class="header-mail"
+            <a href="tel:380504442211" class="header-phone">+38050 444 22 11</a>
+            <a href="mailto:novikoff_oleh@ukr.net" class="header-email"
               >novikoff_oleh@ukr.net</a
             >
           </div>
+
           <div class="header-right">
             <div class="header-social">
-              <a href="https://www.facebook.com/oleg.novikoff">
-                <img src="img/facebook.svg" alt="facebook" />
+              <a href="#">
+                <img src="images/facebook.svg" alt="Facebook" />
               </a>
-              <a href="https://www.facebook.com/oleg.novikoff">
-                <img src="img/linkedin.svg" alt="linkedin" />
+              <a href="#">
+                <img src="images/linkedin.svg" alt="Linkedin" />
               </a>
-              <a href="https://www.facebook.com/oleg.novikoff">
-                <img src="img/twitter.svg" alt="twitter" />
+              <a href="#">
+                <img src="images/twitter.svg" alt="Twitter" />
               </a>
             </div>
+
             <div class="header-btn-wrap">
               <a href="#" class="header-btn">Log In</a>
               <a href="#" class="header-btn is-active">Sign Up</a>
             </div>
 
-            <div class="header-nr">
+            <div class="header-nr select-custom">
               <select>
                 <option>NRs 1</option>
                 <option>NRs 2</option>
@@ -44,16 +114,293 @@
               </select>
             </div>
           </div>
+
+          <nav class="header-nav">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Bookings</a></li>
+              <li><a href="#">Find Ticket</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="header-bottom">
-        <div class="logo">
-          <a href="#">
-            <img src="img/logo.svg" alt="Let’sBookIt" />
-          </a>
+    </header>
+
+    <div
+      class="banner-wrapper"
+      style="background-image: url('images/banner.png')"
+    >
+      <div class="content">
+        <div class="banner-content">
+          <h1 class="banner-title">Скажи світові да</h1>
+          <div class="banner-descr">
+            Ласкаво просимо до нашого сервісу авіаперевезень! Ми - <br />
+            ваш надійний оператор продажу авіаквитків, готові допомогти вам з
+            усіма питаннями, пов'язаними з авіаподорожами.
+          </div>
+
+          <div class="banner-form">
+            <form>
+              <fieldset class="input-fieldset">
+                <label for="departure-airport">Аеропорт вибуття</label>
+                <fieldset class="input-item">
+                  <img src="images/location.svg" alt="локація" />
+                  <input
+                    id="departure-airport"
+                    placeholder="Де ви зараз?"
+                    type="text"
+                  />
+                </fieldset>
+              </fieldset>
+              <fieldset class="input-fieldset">
+                <label for="arrival-airport">Аеропорт прибуття</label>
+                <fieldset class="input-item">
+                  <img src="images/location.svg" alt="локація" />
+                  <input
+                    id="arrival-airport"
+                    placeholder="Де ви зараз?"
+                    type="text"
+                  />
+                </fieldset>
+              </fieldset>
+              <fieldset class="input-fieldset">
+                <label for="date">Дата</label>
+                <fieldset class="input-item">
+                  <img src="images/date.svg" alt="Дата" />
+                  <input id="date" placeholder="Коли ви їдете?" type="text" />
+                </fieldset>
+              </fieldset>
+              <fieldset class="input-fieldset">
+                <label for="travellers">Подорожуючі</label>
+                <fieldset class="input-item">
+                  <img src="images/user.svg" alt="Подорожуючі" />
+                  <div class="select-custom">
+                    <select>
+                      <option selected disabled>Кількість пасажирів</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="banner-btn">
+            <a href="#">Знайти ваш рейс</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dest-wrapper">
+      <div class="content">
+        <div class="dest-row">
+          <div class="dest-left">
+            <h2 class="def-title">Найкращі пропозиції</h2>
+            <div class="def-descr">
+              Ми розуміємо, що кожна подорож - це особливий момент у вашому
+              житті. Тому ми працюємо, щоб зробити ваші авіаційні пригоди
+              комфортними, швидкими і безпечними. Наша мета - забезпечити вам
+              найкращі рейси за доступними цінами і забезпечити вас відмінним
+              обслуговуванням від початку до кінця вашої подорожі.
+            </div>
+            <a href="#" class="def-btn">Дізнайся більше</a>
+          </div>
+
+          <div class="dest-right">
+            <div class="country-grid">
+              <div class="country-item">
+                <div class="country-image">
+                  <img src="images/dest-1.jpg" alt="Country" />
+                </div>
+                <div class="country-footer">
+                  <div class="country-footer-left">
+                    <div class="country-footer-text">
+                      Tokyo, <strong>Japan</strong>
+                    </div>
+                    <div class="country-footer-text">Rs. 4,000 і більше.</div>
+                  </div>
+                  <div class="country-footer-right">
+                    <img src="images/country-icon.svg" alt="іконка" />
+                  </div>
+                </div>
+              </div>
+              <div class="country-item">
+                <div class="country-image">
+                  <img src="images/dest-2.jpg" alt="Country" />
+                </div>
+                <div class="country-footer">
+                  <div class="country-footer-left">
+                    <div class="country-footer-text">
+                      Kuching, <strong>Malaysia</strong>
+                    </div>
+                    <div class="country-footer-text">Rs. 34,000 і більше.</div>
+                  </div>
+                  <div class="country-footer-right">
+                    <img src="images/country-icon.svg" alt="іконка" />
+                  </div>
+                </div>
+              </div>
+              <div class="country-item">
+                <div class="country-image">
+                  <img src="images/dest-3.jpg" alt="Country" />
+                </div>
+                <div class="country-footer">
+                  <div class="country-footer-left">
+                    <div class="country-footer-text">
+                      Kathmandu, <strong>Nepal</strong>
+                    </div>
+                    <div class="country-footer-text">Rs. 25,000 і більше.</div>
+                  </div>
+                  <div class="country-footer-right">
+                    <img src="images/country-icon.svg" alt="іконка" />
+                  </div>
+                </div>
+              </div>
+              <div class="country-item">
+                <div class="country-image">
+                  <img src="images/dest-4.jpg" alt="Country" />
+                </div>
+                <div class="country-footer">
+                  <div class="country-footer-left">
+                    <div class="country-footer-text">
+                      Ruadding, <strong>Namibia</strong>
+                    </div>
+                    <div class="country-footer-text">Rs. 37,000 і більше.</div>
+                  </div>
+                  <div class="country-footer-right">
+                    <img src="images/country-icon.svg" alt="іконка" />
+                  </div>
+                </div>
+              </div>
+              <div class="country-item">
+                <div class="country-image">
+                  <img src="images/dest-5.jpg" alt="Country" />
+                </div>
+                <div class="country-footer">
+                  <div class="country-footer-left">
+                    <div class="country-footer-text">
+                      Sydney, <strong>Australia</strong>
+                    </div>
+                    <div class="country-footer-text">Rs.25,000 і більше.</div>
+                  </div>
+                  <div class="country-footer-right">
+                    <img src="images/country-icon.svg" alt="іконка" />
+                  </div>
+                </div>
+              </div>
+              <div class="country-item">
+                <div class="country-image">
+                  <img src="images/dest-1.jpg" alt="Country" />
+                </div>
+                <div class="country-footer">
+                  <div class="country-footer-left">
+                    <div class="country-footer-text">
+                      Kuala Lumpur, <strong>Malaysia</strong>
+                    </div>
+                    <div class="country-footer-text">Rs. 14,000 і більше.</div>
+                  </div>
+                  <div class="country-footer-right">
+                    <img src="images/country-icon.svg" alt="іконка" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="services-wrapper"
+      style="background-image: url('images/service-image.png')"
+    >
+      <div class="content">
+        <div class="services-row">
+          <div class="services-left">
+            <div class="services-item">
+              <div class="services-title">Миттєвий квиток</div>
+              <div class="services-descr">
+                Наші професійні менеджери готові допомогти вам з вибором
+                найзручніших маршрутів, бронюванням квитків і відповіддю на
+                будь-які ваші запитання.
+              </div>
+            </div>
+            <div class="services-item">
+              <div class="services-title">Подрож по всьому світу</div>
+              <div class="services-descr">
+                Ми пропонуємо широкий вибір авіакомпаній і рейсів, щоб ви мали
+                можливість знайти оптимальне рішення для своєї подорожі.
+              </div>
+            </div>
+            <div class="services-item">
+              <div class="services-title">Надійне бронювання</div>
+              <div class="services-descr">
+                Наша мета - забезпечити вам найкращі рейси за доступними цінами
+                і забезпечити вас відмінним обслуговуванням від початку до кінця
+                вашої подорожі.
+              </div>
+            </div>
+          </div>
+
+          <div class="services-right">
+            <h2 class="def-title">Ми пропонуємо найкращі послуги</h2>
+            <a href="#" class="def-btn">Дізнайся більше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe-wrapper">
+      <div class="content">
+        <h2 class="def-title">
+          Підпишіться <br />
+          щоб отримувати інформацію про найкращі акції та пропозиції
+        </h2>
+        <div class="def-descr">
+          З нами ви можете бути впевнені, що ваша авіаподорож буде
+          запам'ятовуватися як приємний досвід. Не зволікайте,
+          <br />
+          звертайтеся до нас вже зараз, і ми з радістю допоможемо вам
+          забронювати квитки для вашої мрійної подорожі.
         </div>
 
-        <nav class="header-nav">
+        <form class="subscribe-form">
+          <fieldset class="subscribe-input">
+            <img src="images/envelope.svg" alt="Envelope" />
+            <input type="text" placeholder="Email Address" />
+          </fieldset>
+          <button class="def-btn">Підписатися</button>
+        </form>
+
+        <div class="subscribe-envelope">
+          <img src="images/envelope-2.svg" alt="Envelope 2" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="content">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="images/logo-footer.svg" alt="Let’sBookIt" />
+          </a>
+        </div>
+        <div class="footer-text">
+          Будь-які деталі вашої авіаподорожі - від вильоту до прильоту - ми
+          беремо на себе. Ми забезпечимо вам зручний графік,
+          <br />
+          враховуючи ваші побажання, і забезпечимо всю необхідну інформацію щодо
+          багажу, правил перевезення та інших аспектів авіаційних правил.
+        </div>
+
+        <nav class="footer-menu">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Explore</a></li>
@@ -63,10 +410,19 @@
           </ul>
         </nav>
 
-        <div class="hamburger">
-          <img src="img/hamburger.svg" alt="Hamburger" />
+        <div class="footer-copyright">
+          <a
+            href="https://github.com/NovikoffOleh"
+            class="name"
+            target="_blank"
+          >
+            <p>© 2023 OlehNovikoff</p>
+          </a>
         </div>
       </div>
-    </header>
+    </footer>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
